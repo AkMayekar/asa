@@ -3,7 +3,7 @@ pipeline {
   	triggers { 
     		GenericTrigger(
 		      genericVariables: [
-			[key: 'ref', value: '$.ref'],
+			[key: 'ref', value: '$.ref',regexpFilter: 'refs/heads'],
 			[key: 'changed_files', value: '$.commits[*].["modified","added"][*]'],
 		      ],
 
@@ -18,7 +18,7 @@ pipeline {
 	     silentResponse: false,
 
 	     regexpFilterText: '$ref $changed_files' ,
-	     regexpFilterExpression: 'refs/heads/jenkins_periodic_.*"localDev/gateway/a".*'   
+	     regexpFilterExpression: 'jenkins_periodic_.*"localDev/gateway/a".*'   
 	    )
 	  }
   stages {
