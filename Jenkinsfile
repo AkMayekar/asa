@@ -4,7 +4,7 @@ pipeline {
     		GenericTrigger(
 		      genericVariables: [
 			[key: 'ref', value: '$.ref', regexpFilter: 'refs/heads/'],
-			[key: 'changed_files', value: '$.commits[*].["modified","added"][*]'],
+			[key: 'changed_files', value: '$.commits[*].["modified","added"][*]', regexpFilter: 'localDev/gateway/'],
 		      ],
 
 	     causeString: 'Triggered on $ref',
