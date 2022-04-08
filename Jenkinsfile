@@ -3,8 +3,8 @@ pipeline {
   	triggers { 
     		GenericTrigger(
 		      genericVariables: [
-			[key: 'ref', value: '$.ref', regexpFilter: 'refs/heads/'],
-			[key: 'changed_files', value: '$.commits[*].["modified","added"][*]', regexpFilter: 'localDev/gateway/'],
+			[key: 'ref', value: '$.ref'],
+			[key: 'changed_files', value: '$.commits[*].["modified","added"][*]'],
 		      ],
 
 	     causeString: 'Triggered on $ref', 
@@ -18,7 +18,7 @@ pipeline {
 	     silentResponse: false,
 
 	     regexpFilterText: '$ref $changed_files' ,
-	     regexpFilterExpression: 'testing_generic .*"localDev/gateway/[^"]+?".*'   
+	     regexpFilterExpression: 'refs/heads/testing_generic .*"localDev/gateway/[^"]+?".*'   
 	    )
 	  }
   stages {
