@@ -18,7 +18,7 @@ pipeline {
 	     silentResponse: false,
 
 	     regexpFilterText: '$ref $changed_files' ,
-	     regexpFilterExpression: 'testing_generic , New Text Document.txt'   
+	     regexpFilterExpression: 'testing_generic .*"localDev/gateway/[^"]+?".*'   
 	    )
 	  }
   stages {
