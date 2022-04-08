@@ -7,7 +7,7 @@ pipeline {
 			[key: 'changed_files', value: '$.commits[*].["modified","added"][*]', regexpFilter: 'localDev/gateway/'],
 		      ],
 
-	     causeString: 'Triggered on $ref',
+	     causeString: 'Triggered on $ref', 
 
 	     token: 'abc123',
 	     tokenCredentialId: '',
