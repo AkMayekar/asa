@@ -17,7 +17,7 @@ pipeline {
 
 	     silentResponse: false,
 
-	     regexpFilterText: '$ref 
+	     regexpFilterText: '$ref'
 	     regexpFilterExpression: "refs/heads/testing_generic" //(.*"localDev/gateway/[^"]+?".*)  
 	    )
 	  }
