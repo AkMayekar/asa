@@ -17,8 +17,8 @@ pipeline {
 
 	     silentResponse: false,
 
-	     regexpFilterText: '$ref',
-	     regexpFilterExpression: 'testing_generic'   
+	     regexpFilterText: '$ref $changed_files' ,
+	     regexpFilterExpression: 'testing_generic New Text Document.txt'   
 	    )
 	  }
   stages {
