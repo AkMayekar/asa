@@ -18,7 +18,7 @@ pipeline {
 	     silentResponse: false,
 
 	     regexpFilterText: '$ref $changed_files' ,
-	     regexpFilterExpression: 'refs/heads/testing_generic .*"localDev/gateway/a".*'   
+	     regexpFilterExpression: 'refs/heads/jenkins_periodic_. .*"localDev/gateway/a".*'   
 	    )
 	  }
   stages {
