@@ -21,7 +21,8 @@ pipeline {
 	     //regexpFilterExpression: 'refs/heads/testing_generic .*"localDev/gateway/[^"]+?".* ' 
 			
 	     regexpFilterText: '$changed_files'
-	     regexpFilterExpression: 'README.md'
+	     regexpFilterExpression: 'README.md' 
+			
 	    )
 	  }
   stages {
