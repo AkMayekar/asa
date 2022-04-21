@@ -17,11 +17,10 @@ pipeline {
 
 	     silentResponse: false,
 
-	     //regexpFilterText: '$ref $changed_files'
-	     //regexpFilterExpression: 'refs/heads/testing_generic .*"localDev/gateway/[^"]+?".* ' 
+	     regexpFilterText: '$ref $changed_files'
+	     regexpFilterExpression: 'refs/heads/testing_generic .*"localDev/gateway/[^"]+?".* ' 
 			
-	     regexpFilterText: '$changed_files'
-	     regexpFilterExpression: 'README.md' 
+
 			
 	    )
 	  }
