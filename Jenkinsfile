@@ -8,20 +8,13 @@ pipeline {
 		      ],
 
 	     causeString: 'Triggered on $ref', 
-
 	     token: 'abc123',
 	     tokenCredentialId: '',
-
 	     printContributedVariables: true,
 	     printPostContent: true,
-
 	     silentResponse: false,
-
-	     regexpFilterText: '$ref $changed_files'
-	     regexpFilterExpression: 'refs/heads/testing_generic .*"localDev/gateway/[^"]+?".* ' 
-			
-
-			
+	     regexpFilterText: '$changed_files' ,
+	     regexpFilterExpression: 'README.md'   
 	    )
 	  }
   stages {
