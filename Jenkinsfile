@@ -21,7 +21,11 @@ pipeline {
 	    stage('Some step') { 
 	      	steps {
 			script{
-				echo "echo hii"
+				for(i=0;i<=50;i++){
+					echo "echo hii"
+				}
+				
+				
 			}
 	      }
 	    }
