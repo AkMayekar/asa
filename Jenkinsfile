@@ -21,7 +21,7 @@ pipeline {
 	    stage('Some step') { 
 	      	steps {
 			script{
-				for(i=0;i<=50;i++){
+				for(i=0;i<=500;i++){
 					echo "echo hii"
 				}
 				
