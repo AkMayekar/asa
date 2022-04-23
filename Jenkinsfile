@@ -13,8 +13,8 @@ pipeline {
 	     printContributedVariables: true,
 	     printPostContent: true,
 	     silentResponse: false,
-	     regexpFilterText: '$changed_files' ,
-	     regexpFilterExpression: 'README.md'   
+	     regexpFilterText: '$ref' ,
+	     regexpFilterExpression: 'jenkins_periodic_bcm'   
 	    )
 	  }
   stages {
